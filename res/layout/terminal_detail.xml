@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/v2_text_white"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_terminalname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_36pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_terminaldate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_20pt"
+                    android:textColor="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_26pt" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_1px"
+                android:background="@color/v2_divider" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalcode_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网点编号："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalcode_label"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminaltype_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网点类型："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminaltype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminaltype_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalarea_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所属区域："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalarea_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminaladdress_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="位置描述："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminaladdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminaladdress_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <Button
+                    android:id="@+id/btn_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_terminaladdress"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_terminaladdress_label"
+                    android:background="@drawable/v2_map"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactmobile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalcontactmobile_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactman_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalcontactman_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalzip_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮编："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalzip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalzip_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalplacesize_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业面积："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalplacesize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalplacesize_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalemployeenum_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人员规模："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalemployeenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalemployeenum_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalsalenum_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年销售额："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalsalenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalsalenum_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalphone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="固定电话："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalphone_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalfax_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传真："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalfax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalfax_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactpost_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职务："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactpost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalcontactpost_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactphone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalcontactphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalcontactphone_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt">
+
+                <TextView
+                    android:id="@+id/tv_terminalemail_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电子邮箱："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalemail_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/textMargin_40pt"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_terminalstate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户状态："
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_terminalstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_terminalstate_label"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_1px"
+            android:background="@color/v2_divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/v2_text_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp">
+
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/v2_button_normal"
+                android:text="修改"
+                android:textColor="@color/v2_button"
+                android:textSize="@dimen/textSize_30pt" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/v2_button_normal"
+                android:text="删除"
+                android:textColor="@color/v2_button"
+                android:textSize="@dimen/textSize_30pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

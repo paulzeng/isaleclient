@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="audit_content">
+        <item>已批准</item>
+        <item>请执行</item>
+        <item>请重新填报</item>
+        <item>不符要求</item>
+    </string-array>
+    <string-array name="audit_selector">
+        <item>未审批</item>
+        <item>拜访审批</item>
+        <item>差旅审批</item>
+        <item>公告审批</item>
+        <item>请假审批</item>
+    </string-array>
+
+    <string-array name="audit_signresult">
+        <item>同意</item>
+        <item>不同意</item>
+    </string-array>
+        <string-array name="suggestion_signresult">
+        <item>采纳</item>
+        <item>不采纳</item>
+    </string-array>
+    <string-array name="audit_signresult_index">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    
+    <string-array name="usertypes">
+        <item>内勤人员</item>
+        <item>外勤业务人员</item>
+        <item>外勤住店人员</item>
+    </string-array>
+</resources>

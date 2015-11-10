@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/v2_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textSize_36pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:includeFontPadding="false"
+            android:text="@string/v2_settings_app_name"
+            android:textColor="@color/v2_text"
+            android:textSize="@dimen/textSize_36pt" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textSize_26pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:text="@string/v2_settings_app_version"
+            android:textColor="@color/v2_text_light"
+            android:textSize="@dimen/textSize_26pt" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/v2_foreground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_2dcode"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/v2_settings_2d_code"
+                android:textColor="@color/v2_text"
+                android:textSize="@dimen/textSize_32pt" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_1px"
+                android:background="@color/v2_divider" />
+
+            <TextView
+                android:id="@+id/tv_modify_password"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/v2_settings_modify_password"
+                android:textColor="@color/v2_text"
+                android:textSize="@dimen/textSize_32pt" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_1px"
+                android:background="@color/v2_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_checkversion"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/v2_settings_check_version"
+                    android:textColor="@color/v2_text"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:id="@+id/tv_alreadylasestversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="14dp"
+                    android:text="@string/v2_settings_lasetest_version"
+                    android:textColor="@color/v2_text_light"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_notlasestversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="14dp"
+                    android:text="@string/v2_settings_not_lasetest_version"
+                    android:textColor="@color/v2_text_blue"
+                    android:textSize="@dimen/textSize_32pt"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_1px"
+                android:background="@color/v2_divider" />
+
+            <TextView
+                android:id="@+id/tv_newbieguard"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/v2_settings_newbie_guard"
+                android:textColor="@color/v2_text"
+                android:textSize="@dimen/textSize_32pt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/v2_background_button_logout"
+            android:text="@string/v2_settings_logout"
+            android:textColor="@color/v2_text_white"
+            android:textSize="@dimen/textSize_32pt" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/textSize_24pt"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:paddingLeft="16dp"
+            android:text="@string/v2_settings_copyright"
+            android:textColor="@color/v2_text_grey"
+            android:textSize="@dimen/textSize_24pt" />
+    </LinearLayout>
+
+</ScrollView>

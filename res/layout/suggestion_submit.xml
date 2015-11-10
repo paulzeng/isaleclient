@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ll_bottom" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <EditText
+                    android:id="@+id/et_suggestion_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="反馈标题"
+                    android:maxLength="32"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_suggestion_title" >
+
+                <TextView
+                    android:id="@+id/tv_suggestion_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="反馈类型"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_place"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_suggestion_type" >
+
+                <TextView
+                    android:id="@+id/tv_suggstion_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="反馈地点"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_pics"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/rl_suggestion_place"
+                android:background="@color/v2_text_white" >
+
+                <TextView
+                    android:id="@+id/tv_suggestion_pics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="79dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="现场照片"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_suggestion_pics"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_suggestion_pics"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/v2_add_pic" />
+
+                        <ImageView
+                            android:id="@+id/iv_suggestion_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/v2_delete_pic"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_suggestion_content"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/rl_suggestion_pics"
+                android:background="@color/v2_text_white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/et_suggestion_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/v2_text_white"
+                    android:gravity="top"
+                    android:hint="反馈内容"
+                    android:maxLength="512"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" >
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/v2_btn_common"
+                android:text="@string/v2_submit"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/textSize_30pt"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

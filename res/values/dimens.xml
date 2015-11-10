@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tab_padding_drawable">0.0dip</dimen>
+    <dimen name="tab_padding_up">5.0dip</dimen>
+    <dimen name="tab_font_size">15.0dip</dimen>
+    <dimen name="textSize_18pt">10sp</dimen>
+    <dimen name="textSize_20pt">11sp</dimen>
+    <dimen name="textSize_22pt">12sp</dimen>
+    <dimen name="textSize_24pt">13sp</dimen>
+    <dimen name="textSize_26pt">14sp</dimen>
+    <dimen name="textSize_28pt">15sp</dimen>
+    <dimen name="textSize_30pt">16sp</dimen>
+    <dimen name="textSize_32pt">17sp</dimen>
+    <dimen name="textSize_34pt">18sp</dimen>
+    <dimen name="textSize_36pt">19sp</dimen>
+    <dimen name="textSize_38pt">19sp</dimen>
+    <dimen name="textSize_39pt">20sp</dimen>
+    <dimen name="textSize_136pt">72sp</dimen>
+
+    <!-- calendar -->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+
+    <dimen name="divider_1px">0.5dp</dimen>
+
+    <dimen name="textMargin_20pt">5dp</dimen>
+    <dimen name="textMargin_40pt">15dp</dimen>
+</resources>

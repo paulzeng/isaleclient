@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/start_page"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/v2_gray_96a7ff"
+    		android:id="@+id/tv_version"
+    		android:text="销售管家"
+    		android:layout_centerHorizontal="true"
+    		android:textSize="@dimen/textSize_26pt"
+    		android:layout_marginBottom="40dp"
+    		android:layout_alignParentBottom="true"
+        />
+    
+    
+   
+</RelativeLayout>

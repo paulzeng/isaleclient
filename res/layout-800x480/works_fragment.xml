@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="@color/v2_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="161dp"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="8dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-15dp"
+                android:layout_weight="314"
+                android:background="@drawable/v2_calendar_today"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <LinearLayout
+                    android:id="@+id/ll_works_date_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/iv_works_date_pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/v2_work_calendar_arrow_left"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_works_date_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/iv_works_date_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/v2_work_calendar_arrow_right"
+                        android:onClick="onClick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_works_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="19"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_136pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_works_mouth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:gravity="center"
+                        android:text="2014-11"
+                        android:textColor="@color/v2_white"
+                        android:textSize="@dimen/textSize_39pt" />
+
+                    <TextView
+                        android:id="@+id/tv_works_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="星期三    今天"
+                        android:textColor="@color/v2_white"
+                        android:textSize="@dimen/textSize_22pt" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_works_to_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="今天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_22pt"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="390"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="7dp"
+                android:paddingTop="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_works_checkin_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="onClick" >
+
+                    <ImageView
+                        android:id="@+id/iv_works_checkin_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/v2_work_checkin_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/iv_works_checkin_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/iv_works_checkin_icon"
+                        android:text="上班"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                    <Button
+                        android:id="@+id/btn_works_checkin"
+                        android:layout_width="75dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/v2_btn_works"
+                        android:onClick="onClick"
+                        android:text="签到"
+                        android:textColor="@color/v2_btn_text_selector"
+                        android:textSize="@dimen/textSize_30pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_works_checkout_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="onClick" >
+
+                    <ImageView
+                        android:id="@+id/iv_works_checkout_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/v2_work_checkout_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/iv_works_checkout_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/iv_works_checkout_icon"
+                        android:text="下班"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                    <Button
+                        android:id="@+id/btn_works_checkout"
+                        android:layout_width="75dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/v2_btn_works"
+                        android:onClick="onClick"
+                        android:text="签退"
+                        android:textColor="@color/v2_btn_text_selector"
+                        android:textSize="@dimen/textSize_30pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_works_vacation_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="onClick" >
+
+                    <ImageView
+                        android:id="@+id/iv_works_vacation_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/v2_work_vacation_icon" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/iv_works_vacation_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/iv_works_vacation_icon"
+                        android:text="休假"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_30pt" />
+
+                    <Button
+                        android:id="@+id/btn_works_vacation"
+                        android:layout_width="75dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/v2_btn_works"
+                        android:onClick="onClick"
+                        android:text="申请"
+                        android:textColor="@color/v2_btn_text_selector"
+                        android:textSize="@dimen/textSize_30pt" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

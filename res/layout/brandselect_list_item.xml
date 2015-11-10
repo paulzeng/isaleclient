@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_brandname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/v2_icon_brand_small"
+        android:drawablePadding="11dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="苏泊尔"
+        android:textColor="@color/v2_text"
+        android:textSize="15sp" />
+
+</LinearLayout>

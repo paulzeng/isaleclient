@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month_inner_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#eeeeee" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/CalendarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/calendar_month_title_bottommargin"
+            android:layout_marginTop="@dimen/calendar_month_topmargin"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/btn_pre_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/v2_calendar_arrow_left" />
+
+        <ImageView
+            android:id="@+id/btn_next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/v2_calendar_arrow_right" />
+    </RelativeLayout>
+
+    <com.zjrc.isale.client.ui.widgets.calendar.CalendarGridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.zjrc.isale.client.ui.widgets.calendar.CalendarRowView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/calendar_day_headers_paddingbottom" >
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.zjrc.isale.client.ui.widgets.calendar.CalendarRowView>
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+    </com.zjrc.isale.client.ui.widgets.calendar.CalendarGridView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layput"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/v2_calendar_checkout"
+            android:drawablePadding="5dp"
+            android:text="@string/canlendar_checkout"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/checkout"
+            android:drawableLeft="@drawable/v2_calendar_checkin"
+            android:drawablePadding="5dp"
+            android:text="@string/canlendar_checkin"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vacation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/checkout"
+            android:drawableLeft="@drawable/v2_calendar_vacation"
+            android:drawablePadding="5dp"
+            android:text="@string/canlendar_vacation"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</LinearLayout>

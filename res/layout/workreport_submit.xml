@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background" >
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rl_button"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_workreport_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_workreport_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="汇报类型"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_workreport_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_below="@id/rl_workreport_type"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <EditText
+                        android:id="@+id/tv_workreport_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="汇报标题"
+                        android:maxLength="32"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_workreport_begindate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/rl_workreport_title"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_workreport_begindate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="开始日期"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_workreport_enddate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/rl_workreport_begindate"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_workreport_enddate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="结束日期"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_this_cycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_workreport_enddate"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/et_this_cycle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="top"
+                        android:maxLength="512"
+                        android:hint="本期总结"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_next_cycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_this_cycle"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/et_next_cycle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="top"
+                        android:hint="下期计划"
+                        android:maxLength="512"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp" >
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/v2_btn_common"
+                android:text="@string/v2_submit"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/textSize_30pt"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

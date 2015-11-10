@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_audit"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background">
+
+    <TextView
+        android:id="@+id/tv_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/v2_background_shadow"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/v2_text_white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/v2_divider"
+        android:dividerHeight="@dimen/divider_1px"
+        android:listSelector="@drawable/v2_list_item_selector"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/lv_unaudit_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/v2_text_white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/v2_divider_small"
+            android:dividerHeight="@dimen/divider_1px"
+            android:listSelector="@drawable/v2_list_item_selector" />
+
+        <LinearLayout
+            android:id="@+id/ll_listview_foreground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/v2_text_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="25dp"
+                android:drawableTop="@drawable/v2_icon_nomore"
+                android:gravity="center"
+                android:text="辛苦了,歇歇吧~"
+                android:textColor="@color/v2_gray_bbbbbb"
+                android:textSize="@dimen/textSize_36pt" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

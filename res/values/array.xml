@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="suggestiontypes">
+        <item>投诉</item>
+        <item>建议</item>
+    </string-array>
+    <string-array name="terminalplacesizes">
+        <item>20平方米以下</item>
+        <item>20~50平方米</item>
+        <item>50~100平方米</item>
+        <item>100~500平方米</item>
+        <item>500~1000平方米</item>
+        <item>1000平米以上</item>
+    </string-array>
+    <string-array name="terminalemployeenums">
+        <item>10人以下</item>
+        <item>10~50人</item>
+        <item>50~100人</item>
+        <item>100~500人</item>
+        <item>500人以上</item>
+    </string-array>
+    <string-array name="terminalsalenums">
+        <item>50万以下</item>
+        <item>50~100万</item>
+        <item>100~500万</item>
+        <item>500~1000万</item>
+        <item>1000万以上</item>
+    </string-array>
+    <string-array name="terminalstates">
+        <item>正在开发</item>
+        <item>已进驻</item>
+        <item>合同终止</item>
+        <item>开发失败</item>
+    </string-array>
+    <string-array name="workreporttypes">
+        <item>日报</item>
+        <item>周报</item>
+        <item>月报</item>
+        <item>季报</item>
+        <item>年报</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="queryworkreporttypes">
+        <item>全部</item>
+        <item>日报</item>
+        <item>周报</item>
+        <item>月报</item>
+        <item>季报</item>
+        <item>年报</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="queryattencetypes">
+        <item>全部</item>
+        <item>签到</item>
+        <item>签退</item>
+    </string-array>
+    <string-array name="attencetypes">
+        <item>签到</item>
+        <item>签退</item>
+    </string-array>
+    <string-array name="attenceresult">
+        <item>正常</item>
+        <item>迟到 </item>
+        <item>早退</item>
+    </string-array>
+    <string-array name="vacationtypes">
+        <item>年休假</item>
+        <item>病假</item>
+        <item>事假</item>
+        <item>婚假</item>
+        <item>丧假</item>
+        <item>产假</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="queryvacationtypes">
+        <item>全部</item>
+        <item>年休假</item>
+        <item>病假</item>
+        <item>事假</item>
+        <item>婚假</item>
+        <item>丧假</item>
+        <item>产假</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="vacationstate">
+        <item>未审批</item>
+        <item>不同意</item>
+        <item>同意</item>
+    </string-array>
+    <string-array name="planstatus">
+        <item>全部</item>
+        <item>未审批</item>
+        <item>不同意</item>
+        <item>未执行</item>
+        <item>已执行</item>
+        <item>已推迟</item>
+        <item>已取消</item>
+    </string-array>
+    <string-array name="plantype">
+        <item>全部</item>
+        <item>临时</item>
+        <item>常规</item>
+    </string-array>
+    <string-array name="planstates">
+        <item>推迟执行</item>
+        <item>取消执行</item>
+    </string-array>
+    <string-array name="orderstatus">
+        <item>全部</item>
+        <item>待处理</item>
+        <item>不同意</item>
+        <item>待结算</item>
+        <item>已结算</item>
+    </string-array>
+    <string-array name="backorderstatus">
+        <item>全部</item>
+        <item>待处理</item>
+        <item>不同意</item>
+        <item>同意</item>
+    </string-array>
+    <string-array name="calendar_weekday">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string-array name="works_menu_top">
+        <item>拜访任务</item>
+        <item>差旅申请</item>
+        <item>信息反馈</item>
+        <item>工作汇报</item>
+    </string-array>
+    <string-array name="works_menu_top_class_name">
+        <item>com.zjrc.isale.client.ui.activity.PlanSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.TravelSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.SuggestionSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.WorkReportSubmitActivity</item>
+    </string-array>
+    <string-array name="works_menu_bottom">
+        <item>进店品项</item>
+        <item>销量信息</item>
+        <item>库存信息</item>
+        <item>订货信息</item>
+        <item>退货信息</item>
+        <item>销售活动</item>
+        <item>竞品信息</item>
+        <item>竞品活动</item>
+    </string-array>
+    <string-array name="works_menu_bottom_class_name">
+        <item>com.zjrc.isale.client.ui.activity.TerminalProductSubmit</item>
+        <item>com.zjrc.isale.client.ui.activity.SaleSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.StockSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.OrderSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.BackorderSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.PromotionSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.ContendProductSubmitActivity</item>
+        <item>com.zjrc.isale.client.ui.activity.ContendPromotionSubmitActivity</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:paddingBottom="10dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="10dp" >
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="目的地"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_add_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/tv_title"
+                        android:gravity="center_vertical"
+                        android:text="xxxx-xx-xx申请"
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_26pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_address_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="目的地："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_address_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_actual_begindate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_address"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_actual_begindate_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="实际开始日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_begindate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@id/tv_actual_begindate_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_actual_end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_actual_begindate"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_actual_end_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="实际结束日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_end"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_actual_end_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_actual_days"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_actual_end"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_actual_days_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="实际差旅天数："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_days"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_actual_days_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_arrive_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_actual_days"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_arrive_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="到达时间："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_arrive_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_arrive_date_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_arrive_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_arrive_date"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_arrive_place_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="到达地址："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_arrive_place"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_arrive_place_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_leave_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_arrive_place"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_leave_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="离开时间："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_leave_date_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_leave_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_leave_date"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_leave_place_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="离开地点："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_place"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_leave_place_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/rl_leave_place"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/v2_divider" >
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan_begindate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_1"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_plan_begindate_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="计划开始日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_begindate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@id/tv_plan_begindate_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan_end_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_plan_begindate"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_plan_end_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="计划结束日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_enddate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_plan_end_date_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan_days"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_plan_end_date"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_plan_days_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="计划差旅天数："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_days"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_plan_days_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan_man"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_plan_days"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_plan_man_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="差旅人员："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_man"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_plan_man_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan_reason"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_plan_man"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_plan_reason_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="差旅緣由："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_reason"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_plan_reason_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/rl_plan_reason"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/v2_divider" >
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/rl_audit_man"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_2"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_audit_man_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="审批人："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_audit_man"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_audit_man_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_state"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_audit_man"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_state_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="审批状态："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_state_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_state"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_result_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="审批详情："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_result_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#FF0066CC</color>
+    <color name="gray">#FFD3D3D3</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="grey2">#e3e3e3</color>
+    <color name="yahei">#FF333333</color>
+    <color name="yahui">#FF666666</color>
+    <color name="green">#FF71AC20</color>
+    <color name="start_color">#FF81C1FC</color>
+    <color name="center_color">#FF52A6F6</color>
+    <color name="end_color">#FF1C86EE</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="v2_blue">#5E76FF</color>
+    <color name="v2_white">#D6DbFF</color>
+    <color name="v2_gray_bbbbbb">#bbbbbb</color>
+    <color name="v2_gray_cccccc">#CCCCCC</color>
+    <color name="v2_gray_353535">#353535</color>
+    <color name="v2_gray_444444">#444444</color>
+    <color name="v2_gray_888888">#888888</color>
+    <color name="v2_gray_999999">#999999</color>
+    <color name="v2_gray_f5f5f5">#f5f5f5</color>
+    <color name="v2_gray_555555">#555555</color>
+    <color name="v2_gray_e2e2e2">#e2e2e2</color>
+    <color name="v2_gray_96a7ff">#96a7ff</color>
+    <color name="v2_white_2">#80FFFFFF</color>
+    <color name="v2_red">#FFFF4403</color>
+    <color name="v2_press">#fafafa</color>
+    <!-- menudrawer -->
+    <color name="md__transparent">#FFFFFFFF</color>
+    <color name="md__defaultBackground">#FFFFFFFF</color>
+
+    <!-- calendar -->
+    <color name="calendar_active_month_bg">#FFFFFFFF</color>
+    <color name="calendar_bg">#FFFFFFFF</color>
+    <color name="calendar_divider">#FFBABABA</color>
+    <color name="calendar_inactive_month_bg">#FFD7D9DB</color>
+    <!-- 被选择日期背景 -->
+    <color name="calendar_selected_day_bg">#FFE6E6E6</color>
+    <color name="calendar_selected_range_bg">#FF96CAFF</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#FF778088</color>
+    <!-- 被选日期字体颜色 -->
+    <color name="calendar_text_selected">#FFFFFFFF</color>
+    <!-- 未选择日期字体颜色 -->
+    <color name="calendar_text_unselectable">#7F778088</color>
+    <!-- 周末字体颜色 -->
+    <color name="calendar_text_weekend">#FFFF0000</color>
+
+    <!-- 签到dot -->
+    <color name="calendar_dot_checkin">#FFFFBC1B</color>
+    <!-- 签退dot -->
+    <color name="calendar_dot_checkout">#FF8C9EFF</color>
+    <!-- 休假dot -->
+    <color name="calendar_dot_vacation">#FF85BD00</color>
+
+</resources>

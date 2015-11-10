@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/iv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:src="@drawable/v2_icon_selected"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="55dp"
+        android:text="未审批"
+        android:textColor="@color/v2_text"
+        android:textSize="@dimen/textSize_32pt" />
+
+    <TextView
+        android:id="@+id/tv_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tv_selector"
+        android:background="@drawable/v2_audit_num"
+        android:gravity="center"
+        android:text="99+"
+        android:textColor="@color/v2_text_white"
+        android:textSize="@dimen/textSize_24pt"
+        android:visibility="gone" />
+
+</RelativeLayout>

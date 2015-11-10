@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjrc.isale.client"
+    android:versionCode="1"
+    android:versionName="2.00" >
+
+    <application
+        android:name=".application.ISaleApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanDelayDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanSubmitDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.NoticeDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SuggestionListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SuggestionDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SuggestionSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SuggestionSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BaiduMapActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.WorkReportSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.WorkreportSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.WorkListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.WorkItemActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.AttenceSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.AttenceListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.AttenceDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.AttenceSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelExecutionActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelDestinationActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelSubmitDetailActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TravelListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.VacationSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.VacationListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.VacationDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.VacationSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalSelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanDelaySubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PlanPatrolSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.CaptureActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ImageViewActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductSubmit"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.StockListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.StockSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SaleListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SaleSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.OrderListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.OrderSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BackorderListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BackorderSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PromotionListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PromotionSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ProductItemActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BrandSelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.CategorySelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ProductSelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductSubmitActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendPromotionSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendPromotionListActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductSelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PasswordModifyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductSelectActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContactDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.AuditSubmitActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SaleDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.OrderDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.StockDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BackorderDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PromotionDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendPromotionDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.SaleSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.OrderSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.StockSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BackorderSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.PromotionSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.TerminalProductSelectSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ContendProductSelectSearchActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.BrandSelectSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.CategorySelectSearchActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+        <activity
+            android:name=".ui.activity.ShareActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SmallTheme" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!--
+                <service
+            android:name=".service.LocationService"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" />
+        </service>
+        <service
+            android:name=".service.AuditNotifyService"
+            android:enabled="true" />
+                    <receiver android:name=".service.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.zjrc.isale.client.alarm.action" />
+            </intent-filter>
+        </receiver>
+                <receiver
+            android:name=".service.LocationService$LocationTaskReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="2147483647" />
+        </receiver>
+        <receiver
+            android:name=".service.LocationService$ReconnectReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="2147483647" />
+        </receiver>
+        -->
+
+        <receiver
+            android:name=".service.BootBroadcastReceiver"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="548a9577fd98c59ba7000ce1" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ZJRC_2.0BETA" />
+    </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.DEVICE_POWER"></uses-permission> -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_terminalname"
+    android:layout_width="wrap_content"
+    android:layout_height="33dp"
+    android:background="@drawable/v2_background_baidu_popup"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text="世纪联华"
+    android:textColor="@color/v2_text_white"
+    android:textSize="@dimen/textSize_30pt" />

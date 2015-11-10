@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="10dp" >
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_time"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_add_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/tv_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_26pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_type_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="汇报类型："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_type_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_begin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_type"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_begin_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="开始日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_begin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_begin_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_begin"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_end_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="结束日期："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_end"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_end_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_this_cycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_end"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_this_cycle_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="本期总结："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_this_cycle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/tv_this_cycle_title"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_next_cycle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_this_cycle"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_next_cycle_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="下周计划："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_next_cycle"
+                        android:layout_width="fill_parent"
+                                                android:layout_marginTop="10dp"
+                        
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/tv_next_cycle_title"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

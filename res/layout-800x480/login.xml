@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/login_title_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/v2_login_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="220dip"
+        android:background="@drawable/v2_login_edit_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_phoneno"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/tv_phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/v2_login_name"
+                android:paddingLeft="5dip"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_phoneno"
+                android:layout_width="fill_parent"
+                android:layout_height="38dip"
+                android:layout_marginLeft="15dip"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="#808080"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/v2_gray_e2e2e2" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/v2_login_password"
+                android:paddingLeft="5dip"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="fill_parent"
+                android:layout_height="38dip"
+                android:layout_marginLeft="15dip"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColorHint="#808080"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/v2_btn_common"
+        android:text="登        录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_30pt" />
+
+    <TextView
+        android:id="@+id/tv_imsi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="IMSI:000000000000000"
+        android:textColor="@color/v2_gray_bbbbbb"
+        android:textSize="@dimen/textSize_26pt" />
+
+    <RelativeLayout
+        android:id="@+id/rl_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_layout"
+        android:layout_marginLeft="70dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="5dip" >
+
+        <CheckBox
+            android:id="@+id/cb_savepassword"
+            style="@style/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="记住密码"
+            android:textColor="@color/v2_white_2"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/regist_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:textColor="@color/v2_white_2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip" >
+
+        <TextView
+            android:id="@+id/tv_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="技术支持"
+            android:textColor="@color/v2_gray_bbbbbb"
+            android:textSize="@dimen/textSize_20pt" />
+
+        <ImageView
+            android:id="@+id/iv_support_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@id/tv_support"
+            android:src="@drawable/v2_support_1" />
+
+        <ImageView
+            android:id="@+id/iv_support_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_support_1"
+            android:src="@drawable/v2_support_2" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_support_2"
+            android:background="@color/v2_gray_e2e2e2" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="版本号：V2.0.0"
+            android:textColor="@color/v2_gray_bbbbbb"
+            android:textSize="@dimen/textSize_20pt" />
+    </RelativeLayout>
+
+</RelativeLayout>

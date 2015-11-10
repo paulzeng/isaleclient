@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/v2_gray_f5f5f5"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_destination"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/v2_gray_888888"
+        android:textSize="@dimen/textSize_32pt"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_destinationlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:clickable="true"
+        android:divider="@null"
+        android:focusable="true"
+        android:listSelector="@color/v2_press" >
+    </ListView>
+
+</LinearLayout>

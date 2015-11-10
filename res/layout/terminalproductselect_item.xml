@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_productname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="九阳豆浆机"
+            android:textColor="@color/v2_text"
+            android:textSize="@dimen/textSize_32pt" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_productbrandname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/v2_icon_brand_small"
+                android:drawablePadding="11dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="九阳"
+                android:textColor="@color/v2_text_grey"
+                android:textSize="@dimen/textSize_26pt" />
+
+            <TextView
+                android:id="@+id/tv_productcategoryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="11dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="个人甚或小家电"
+                android:textColor="@color/v2_text_grey"
+                android:textSize="@dimen/textSize_26pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/v2_divider" />
+</RelativeLayout>

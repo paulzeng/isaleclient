@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="4dip"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/rl_plan_customer"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <EditText
+                    android:id="@+id/tv_plan_customer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入客户名称"
+                    android:maxLength="64"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plan_date"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/rl_plan_customer"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_plan_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="请选择任务时间"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plan_type"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/rl_plan_date"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_plan_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="请选择拜访类型"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_plan_status"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@id/rl_plan_type"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_plan_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="请选择任务状态"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <View
+                    android:layout_width="325dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/v2_gray_e2e2e2" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_button"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/rl_plan_status"
+                android:background="@color/white" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp" >
+
+                    <Button
+                        android:id="@+id/btn_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:background="@drawable/v2_btn_common"
+                        android:text="@string/attence_search"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/textSize_30pt"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

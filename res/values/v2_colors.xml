@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="v2_background">#ffebebeb</color>
+    <color name="v2_background_shadow">#4c000000</color>
+    <color name="v2_divider">#ffe0e0e0</color>
+    <color name="v2_divider_light">#ffe2e2e2</color>
+    <color name="v2_text">#ff353535</color>
+    <color name="v2_text_light">#ff888888</color>
+    <color name="v2_text_lighter">#ff666666</color>
+    <color name="v2_text_white">#ffffffff</color>
+    <color name="v2_text_grey">#ffbbbbbb</color>
+    <color name="v2_text_light_grey">#ffebeeff</color>
+    <color name="v2_text_blue">#ff5e76ff</color>
+    <color name="v2_text_red">#ffff4403</color>
+    <color name="v2_text_link">#ff5e76ff</color>
+    <color name="v2_text_shadow">#28000000</color>
+    <color name="v2_button">#ff555555</color>
+    <color name="v2_money">#ffff6700</color>
+    <color name="v2_border_listview">#ffcacaca</color>
+    <color name="v2_background_listview">#fff5f5f5</color>
+    <color name="v2_barcode_bg">#88000000</color>
+
+</resources>

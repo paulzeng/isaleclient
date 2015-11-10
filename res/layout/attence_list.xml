@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_searchcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dip"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/attence_type"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <Spinner
+                    android:id="@+id/sp_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/spinner"
+                    android:drawSelectorOnTop="false" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_stockdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_type"
+                android:background="@color/white"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_attencedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dip"
+                    android:focusable="true"
+                    android:gravity="center_vertical|right"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="@string/attence_date"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/et_attencedate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_attencedate"
+                    android:background="@drawable/input_text_selector"
+                    android:hint="@string/stocklist_datehint"
+                    android:maxLength="10"
+                    android:minHeight="38dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="38dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_searchbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_stockdate"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:background="@drawable/button_blue"
+                    android:text="@string/stocklist_search"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hidden"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_searchcontent"
+            android:background="@drawable/search_pg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_button"
+        android:layout_below="@+id/rl_search" >
+
+        <com.zjrc.isale.client.ui.widgets.pulltorefreshview.PullToRefreshListView
+            android:id="@+id/lv_attencelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            mode="both"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:divider="@null"
+            android:focusable="true"
+            android:listSelector="@color/v2_press" >
+        </com.zjrc.isale.client.ui.widgets.pulltorefreshview.PullToRefreshListView>
+
+        <include
+            android:id="@+id/ll_listview_foreground"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            layout="@layout/listview_foreground"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bg"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="fill_parent"
+            android:layout_height="38dip"
+            android:background="@drawable/button_blue"
+            android:text="@string/work_attence"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

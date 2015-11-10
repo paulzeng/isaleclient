@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_works_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:id="@+id/tv_works_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="拜访"
+                android:textColor="@color/v2_gray_353535"
+                android:textSize="@dimen/textSize_22pt" />
+
+            <ImageView
+                android:id="@+id/iv_works_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_works_item"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/v2_work_visit_icon" />
+
+            <View
+                android:layout_width="@dimen/divider_1px"
+                android:layout_height="match_parent"
+                android:layout_above="@id/iv_works_item"
+                android:layout_centerInParent="true"
+                android:background="@color/v2_gray_cccccc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_works_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/rl_works_item"
+            android:background="@drawable/v2_work_item_bg" >
+
+            <ImageView
+                android:id="@+id/iv_works_item_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/v2_work_dot_blue" />
+
+            <TextView
+                android:id="@+id/tv_works_item_action1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:text="删除"
+                android:textColor="@color/v2_gray_888888"
+                android:textSize="@dimen/textSize_32pt" />
+
+            <View
+                android:id="@+id/tv_works_item_line"
+                android:layout_width="@dimen/divider_1px"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/tv_works_item_action1"
+                android:background="@color/v2_gray_cccccc" />
+
+            <TextView
+                android:id="@+id/tv_works_item_action2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/tv_works_item_line"
+                android:text="修改"
+                android:textColor="@color/v2_gray_888888"
+                android:textSize="@dimen/textSize_32pt" />
+
+            <TextView
+                android:id="@+id/tv_works_item_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/tv_works_item_action2"
+                android:layout_toRightOf="@id/iv_works_item_dot"
+                android:singleLine="true"
+                android:text="苏宁电器"
+                android:textColor="@color/v2_gray_353535"
+                android:textSize="@dimen/textSize_32pt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

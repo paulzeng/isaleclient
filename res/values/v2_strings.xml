@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 设置 -->
+    <string name="v2_settings_app_name">iSale 销售管家</string>
+    <string name="v2_settings_app_version">V2.0</string>
+    <string name="v2_settings_2d_code">二维码</string>
+    <string name="v2_settings_modify_password">修改密码</string>
+    <string name="v2_settings_check_version">版本更新</string>
+    <string name="v2_settings_lasetest_version">已是最新版本</string>
+    <string name="v2_settings_not_lasetest_version">发现新版本</string>
+    <string name="v2_settings_newbie_guard">新手引导</string>
+    <string name="v2_settings_logout">退出当前账号</string>
+    <string name="v2_settings_copyright">浙江融创信息产业有限公司技术支持</string>
+    <!-- 密码修改 -->
+    <string name="v2_title_modify_password">修改密码</string>
+    <string name="v2_old_password">当前密码</string>
+    <string name="v2_new_password">新密码</string>
+    <string name="v2_confirm_password">确认新密码</string>
+    <string name="v2_save_password">保存密码</string>
+    <!-- 二维码 -->
+    <string name="v2_share">二维码</string>
+    <string name="v2_share_scan">扫一扫上面的二维码图案，下载客户端</string>
+    <!-- 搜索 -->
+    <string name="v2_clearfilter">筛选条件已清空～</string>
+
+</resources>

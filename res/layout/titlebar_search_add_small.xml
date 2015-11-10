@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btn_titlebar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/v2_title_back" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_titlebar_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/v2_title_add" />
+
+    <Button
+        android:id="@+id/btn_titlebar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btn_titlebar_add"
+        android:background="@drawable/v2_search" />
+
+    <TextView
+        android:id="@+id/tv_titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/rl_titlebar_left"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/v2_gray_444444"
+        android:textSize="@dimen/textSize_36pt"
+        android:textStyle="normal" />
+
+</RelativeLayout>

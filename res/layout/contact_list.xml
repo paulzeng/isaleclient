@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/v2_background_search"
+        android:drawableLeft="@drawable/v2_icon_search"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/v2_text_grey"
+        android:textSize="@dimen/textSize_28pt" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.zjrc.isale.client.ui.widgets.pulltorefreshview.PullToRefreshListView
+            android:id="@+id/lv_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/v2_list_item_selector" />
+
+        <TextView
+            android:id="@+id/tv_notmatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="25dp"
+            android:drawableTop="@drawable/v2_contact_notmatch"
+            android:text="暂无匹配联系人"
+            android:textColor="@color/v2_text_grey"
+            android:textSize="@dimen/textSize_32pt"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

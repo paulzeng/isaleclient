@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="13dp"
+    android:paddingTop="12dp"
+    android:text="已批准"
+    android:textColor="@color/v2_text"
+    android:textSize="@dimen/textSize_30pt" />

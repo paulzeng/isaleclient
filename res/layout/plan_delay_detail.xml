@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip" >
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:paddingTop="10dp" >
+
+                    <View
+                        android:layout_width="325dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_add_time"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/v2_gray_e2e2e2" >
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_36pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_add_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/tv_title"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_26pt" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@id/tv_title"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@id/tv_add_time"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/v2_red"
+                        android:textSize="@dimen/textSize_26pt" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_terminal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_title"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_terminal_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="计划网店："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_terminal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_terminal_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_terminal"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_time_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center_vertical"
+                        android:text="计划时间："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@id/tv_time_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_time"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_content_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="计划内容："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_content_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delay_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_delay_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="取消时间："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_delay_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_delay_date_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delay_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_delay_date"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_delay_type_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="取消类型："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_delay_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_delay_type_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_delay_reason"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_delay_type"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_delay_reason_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="取消原因："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_delay_reason"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_delay_reason_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+ 
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/v2_background_dialog"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="21dp"
+        android:text="常用审批意见"
+        android:textColor="#ff5e7fff"
+        android:textSize="@dimen/textSize_32pt" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_1px"
+        android:background="#ff5e7fff" />
+
+    <ListView
+        android:id="@+id/lv_items"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="13dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/v2_list_item_selector" />
+
+</LinearLayout>

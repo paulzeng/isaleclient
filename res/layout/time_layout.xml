@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="350dp"
+    android:background="@color/white"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="21dp"
+        android:text="请选择差旅结束时间"
+        android:textColor="#ff5e7fff"
+        android:textSize="@dimen/textSize_32pt" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_1px"
+        android:layout_below="@id/tv_title"
+        android:background="#ff5e7fff" />
+
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" >
+
+        <com.zjrc.isale.client.ui.widgets.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.zjrc.isale.client.ui.widgets.wheelview.WheelView
+            android:id="@+id/month"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.zjrc.isale.client.ui.widgets.wheelview.WheelView
+            android:id="@+id/day"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_alertdialog_positive"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:background="@drawable/v2_btn_works"
+            android:text="@string/v2_dialog_alert_btn_positive"
+            android:textColor="@color/v2_gray_555555"
+            android:textSize="@dimen/textSize_30pt" />
+
+        <Button
+            android:id="@+id/btn_alertdialog_negative"
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/v2_btn_works"
+            android:text="@string/v2_dialog_alert_btn_negative"
+            android:textColor="@color/v2_gray_555555"
+            android:textSize="@dimen/textSize_30pt" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="54dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp">
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/iv_menu_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v2_menu_audit" />
+
+        <TextView
+            android:id="@+id/tv_menu_item_image_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/v2_audit_num"
+            android:gravity="center"
+            android:text="99+"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_24pt" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="我的审批"
+        android:textColor="@color/v2_button"
+        android:textSize="@dimen/textSize_32pt" />
+
+</LinearLayout>

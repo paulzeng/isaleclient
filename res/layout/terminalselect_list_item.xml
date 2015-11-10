@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_terminalname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="苏宁电器莫干山路"
+            android:textColor="@color/v2_text"
+            android:textSize="@dimen/textSize_32pt" />
+
+        <TextView
+            android:id="@+id/tv_terminaladdress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/v2_icon_location_small"
+            android:drawablePadding="11dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="杭州市西湖区文三路"
+            android:textColor="@color/v2_text_grey"
+            android:textSize="@dimen/textSize_26pt" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/v2_divider" />
+</RelativeLayout>

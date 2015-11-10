@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="386dp"
+    android:background="#33000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:textSize="@dimen/textSize_28pt"
+            android:background="@color/v2_gray_f5f5f5"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="工作新增"
+            android:textColor="@color/v2_blue" />
+
+        <GridView
+            android:id="@+id/gv_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="15dp"
+            android:numColumns="3"
+            android:paddingBottom="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="18dp"
+            android:verticalSpacing="20dp" >
+        </GridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@color/v2_gray_f5f5f5"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+                        android:textSize="@dimen/textSize_28pt"
+            android:paddingRight="20dp"
+            android:text="业务上报"
+            android:textColor="@color/v2_blue" />
+
+        <GridView
+            android:id="@+id/gv_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="15dp"
+            android:numColumns="3"
+            android:paddingBottom="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="18dp"
+            android:verticalSpacing="20dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

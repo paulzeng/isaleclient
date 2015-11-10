@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <EditText
+                    android:id="@+id/et_terminalcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="客户编号"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <EditText
+                    android:id="@+id/et_terminalname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="客户名称"
+                    android:maxLength="32"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <TextView
+                    android:id="@+id/tv_terminaltype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="客户类型"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <TextView
+                    android:id="@+id/tv_terminalarea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="所属区域"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <EditText
+                    android:id="@+id/et_terminaladdress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="客户地址"
+                    android:maxLength="128"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <EditText
+                    android:id="@+id/et_terminalcontactman"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="联系人"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <EditText
+                    android:id="@+id/et_terminalcontactmobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:gravity="center_vertical"
+                    android:hint="手机号码"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/v2_text_white"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_terminallonlat"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="经纬度"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalzip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="邮编"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_terminalplacesize"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="营业面积"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_terminalemployeenum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="人员规模"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_terminalsalenum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="年销售额"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalphone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="固定电话"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalfax"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="传真"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalcontactpost"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="联系人职务"
+                        android:maxLength="16"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalcontactphone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="联系人固定电话"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <EditText
+                        android:id="@+id/et_terminalemail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:gravity="center_vertical"
+                        android:hint="电子邮箱"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="64"
+                        android:singleLine="true"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divider_1px"
+                        android:background="@color/v2_background"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp" />
+
+                    <TextView
+                        android:id="@+id/tv_terminalstate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/v2_text_white"
+                        android:drawableRight="@drawable/v2_down_arrow"
+                        android:gravity="center_vertical"
+                        android:hint="客户状态"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/v2_text_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_1px"
+            android:background="@color/v2_divider" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/v2_button_normal"
+            android:text="提交"
+            android:textColor="@color/v2_button"
+            android:textSize="@dimen/textSize_30pt" />
+    </LinearLayout>
+
+</RelativeLayout>

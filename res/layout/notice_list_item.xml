@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_listitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_noticedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/v2_background_notice_date"
+        android:gravity="center"
+        android:text="2014-09-18"
+        android:textColor="@color/v2_text_white"
+        android:textSize="@dimen/textSize_24pt"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_noticetitle"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/v2_list_item_selector_white"
+        android:drawableLeft="@drawable/v2_icon_notice"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingLeft="12dp"
+        android:paddingRight="15dp"
+        android:text="公告内容"
+        android:textColor="@color/v2_text_light"
+        android:textSize="@dimen/textSize_32pt" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <style name="checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:button">@drawable/btn_check</item>
+    </style>
+
+    <style name="corner_margin_style">
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+    </style>
+
+    <style name="custom_spinner">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:background">@drawable/spinner</item>
+    </style>
+
+    <style name="bigtitlebarbg">
+        <item name="android:background">@drawable/v2_title_bg</item>
+    </style>
+
+    <style name="BigTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">55dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/bigtitlebarbg </item>
+    </style>
+
+    <style name="smalltitlebarbg">
+        <item name="android:background">@drawable/v2_title_bg</item>
+    </style>
+
+    <style name="SmallTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">50dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/smalltitlebarbg </item>
+    </style>
+
+    <style name="NormalTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">45dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/smalltitlebarbg </item>
+    </style>
+
+    <style name="tabstyle">
+        <item name="android:textSize">@dimen/tab_font_size</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:paddingTop">@dimen/tab_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SelectDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Samples" />
+
+    <style name="Samples.Category">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/md__category_background</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuDrawer" />
+
+    <style name="MenuDrawer.Widget" />
+
+    <style name="MenuDrawer.Widget.Category">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/md__category_background</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Widget" />
+
+    <!-- Base theme for the menu drawer. -->
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
+
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:background">@drawable/calendar_bg_selector</item>
+        <item name="android:textColor">@color/calendar_text_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupshow</item>
+        <item name="android:windowExitAnimation">@anim/popuphide</item>
+    </style>
+
+</resources>

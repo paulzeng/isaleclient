@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/v2_background">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv_signresult"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:drawableRight="@drawable/v2_down_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="请选择审批结果"
+                    android:textColor="@color/v2_text"
+                    android:textColorHint="@color/v2_text_grey"
+                    android:textSize="@dimen/textSize_32pt" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divider_1px"
+                    android:background="@color/v2_background"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_signcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="132dp"
+                        android:layout_marginRight="85dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="top"
+                        android:hint="请填写审批意见"
+                        android:maxLength="128"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/v2_text"
+                        android:textColorHint="@color/v2_text_grey"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <Button
+                        android:id="@+id/bt_commoncontent"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/textMargin_40pt"
+                        android:background="@drawable/v2_button_normal"
+                        android:gravity="center"
+                        android:text="常用意见"
+                        android:textColor="@color/v2_button"
+                        android:textSize="@dimen/textSize_26pt" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingBottom="41dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="21dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请人："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_createdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务类型："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拜访网店："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_terminal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计划时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拜访内容："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_patrol_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="执行时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_patrol_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_patrol_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="位置描述："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_patrol_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_address_label"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <Button
+                        android:id="@+id/btn_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_patrol_address"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/tv_address_label"
+                        android:background="@drawable/v2_map"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_patrol_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="执行内容："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_patrol_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_patrol_pics"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_pics_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="10.0dip"
+                        android:gravity="center_vertical"
+                        android:text="执行照片："
+                        android:textColor="@color/v2_gray_888888"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_patrol_pics"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_toRightOf="@id/tv_pics_title"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/v2_gray_353535"
+                        android:textSize="@dimen/textSize_32pt" />
+                </RelativeLayout>
+
+                <com.zjrc.isale.client.ui.view.ScaledImageView
+                    android:id="@+id/iv_patrol_pics_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/v2_default"
+                    android:visibility="gone" />
+
+                <com.zjrc.isale.client.ui.view.ScaledImageView
+                    android:id="@+id/iv_patrol_pics_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/v2_default"
+                    android:visibility="gone" />
+
+                <com.zjrc.isale.client.ui.view.ScaledImageView
+                    android:id="@+id/iv_patrol_pics_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/v2_default"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批状态："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未审批"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_travel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingBottom="41dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="21dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请人："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_createdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="目的地："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计划开始时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_begindate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计划结束时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_endtate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计划差旅天数："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="差旅缘由："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_travel_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批状态："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未审批"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingBottom="41dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="21dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请人："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_notice_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_notice_createdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公告标题："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_notice_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公告内容："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text_link"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="目标人员："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_notice_noticeuser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批状态："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未审批"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vacation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/v2_text_white"
+                android:orientation="vertical"
+                android:paddingBottom="41dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="21dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请人："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="申请时间："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_createdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假类型："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始日期："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_begindate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束日期："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_endtate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假天数："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假缘由："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:id="@+id/tv_vacation_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textMargin_40pt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="审批状态："
+                        android:textColor="@color/v2_text_light"
+                        android:textSize="@dimen/textSize_32pt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未审批"
+                        android:textColor="@color/v2_text"
+                        android:textSize="@dimen/textSize_32pt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/v2_text_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_1px"
+            android:background="@color/v2_divider" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/v2_button"
+            android:text="提交"
+            android:textColor="@color/v2_text_white"
+            android:textSize="@dimen/textSize_30pt" />
+    </LinearLayout>
+
+</RelativeLayout>
